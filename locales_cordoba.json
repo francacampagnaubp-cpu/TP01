@@ -1,0 +1,107 @@
+{
+  "locales": [
+    {
+      "id": 1,
+      "nombre": "Chilis street club",
+      "direccion": "Fructuoso Rivera 273, X5000BOE Córdoba, Argentina",
+      "latitud": -31.4255821,
+      "longitud": -64.1922026,
+      "tipo": "Bar/Club"
+    },
+    {
+      "id": 2,
+      "nombre": "Jangadero",
+      "direccion": "Dr. T. Achaval Rodriguez 257, X5000 Córdoba, Argentina",
+      "latitud": -31.4244685,
+      "longitud": -64.191521,
+      "tipo": "Bar"
+    },
+    {
+      "id": 3,
+      "nombre": "Club Paraguay",
+      "direccion": "Av. Marcelo T. de Alvear 651, X5000 Córdoba, Argentina",
+      "latitud": -31.4222484,
+      "longitud": -64.1922274,
+      "tipo": "Club"
+    },
+    {
+      "id": 4,
+      "nombre": "Petalos de Sol",
+      "direccion": "Av. Marcelo T. de Alvear 396, X5000KGS Córdoba, Argentina",
+      "latitud": -31.4195016,
+      "longitud": -64.1902896,
+      "tipo": "Espacio"
+    },
+    {
+      "id": 5,
+      "nombre": "Un Mundo Feliz",
+      "direccion": "Caseros 382, X5000AHH Córdoba, Argentina",
+      "latitud": -31.416696,
+      "longitud": -64.1901018,
+      "tipo": "Bar/Club"
+    },
+    {
+      "id": 6,
+      "nombre": "Pez Volcán",
+      "direccion": "Av. Marcelo T. de Alvear 835, X5000 Córdoba, Argentina",
+      "latitud": -31.4242854,
+      "longitud": -64.1933604,
+      "tipo": "Bar"
+    },
+    {
+      "id": 7,
+      "nombre": "Studio Theater",
+      "direccion": "Rosario de Sta. Fe 272, X5000 Córdoba, Argentina",
+      "latitud": -31.4172232,
+      "longitud": -64.1805719,
+      "tipo": "Espacio de Entretenimiento"
+    },
+    {
+      "id": 8,
+      "nombre": "Plaza de la música",
+      "direccion": "Ramón Bautista Mestre, X5000 Córdoba, Argentina",
+      "latitud": -31.3848595,
+      "longitud": -64.2484705,
+      "tipo": "Espacio"
+    },
+    {
+      "id": 9,
+      "nombre": "Quality Espacio",
+      "direccion": "Cruz Roja Argentina 200, X5000 Córdoba, Argentina",
+      "latitud": -31.4435289,
+      "longitud": -64.194865,
+      "tipo": "Espacio"
+    },
+    {
+      "id": 10,
+      "nombre": "Luzbelito Bar",
+      "direccion": "Buenos Aires 489, X5000IMI Córdoba, Argentina",
+      "latitud": -31.422252,
+      "longitud": -64.1850783,
+      "tipo": "Bar"
+    },
+    {
+      "id": 11,
+      "nombre": "Lupulus",
+      "direccion": "Chacabuco 819, X5000III Córdoba, Argentina",
+      "latitud": -32.1658104,
+      "longitud": -64.1261896,
+      "tipo": "Bar"
+    }
+  ],
+  "metadatos": {
+    "total": 11,
+    "fecha_actualizacion": "2026-05-14",
+    "ciudad": "Córdoba",
+    "provincia": "Córdoba",
+    "pais": "Argentina",
+    "rango_latitud": {
+      "minimo": -32.1658104,
+      "maximo": -31.3848595
+    },
+    "rango_longitud": {
+      "minimo": -64.2484705,
+      "maximo": -64.1261896
+    }
+  }
+}
