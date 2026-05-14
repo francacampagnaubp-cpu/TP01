@@ -2,25 +2,217 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Título de la página</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autora - Sinestesia</title>
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #eee3d4;
+      color: #69181a;
+    }
+
+    header {
+      background-color: #69181a;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      width: 40px;
+      height: 20px;
+      background-color: #cfe8ff;
+      border-radius: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #cfe8ff;
+      margin: 15px;
+      font-size: 12px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-color: #cfe8ff;
+      text-align: center;
+      padding: 60px 20px;
+      color: #69181a;
+    }
+
+    .hero h1 {
+      font-size: 45px;
+      margin: 0 0 20px 0;
+    }
+
+    .hero p {
+      width: 60%;
+      margin: auto;
+    }
+
+    section {
+      background-color: #eee3d4;
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 35px;
+      color: #69181a;
+    }
+
+    .autora-content {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .autora-foto {
+      width: 250px;
+      height: 250px;
+      background-color: #69181a;
+      border-radius: 15px;
+      flex-shrink: 0;
+    }
+
+    .autora-info {
+      flex: 1;
+    }
+
+    .autora-info h3 {
+      font-size: 32px;
+      margin: 0 0 15px 0;
+      color: #69181a;
+    }
+
+    .autora-info p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .redes {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .red {
+      width: 40px;
+      height: 40px;
+      background-color: #69181a;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .red:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      background-color: #69181a;
+      color: #cfe8ff;
+      text-align: center;
+      padding: 40px;
+      margin-top: 50px;
+    }
+
+    footer h2 {
+      color: #cfe8ff;
+      margin-top: 0;
+    }
+
+    footer p {
+      margin: 10px 0;
+    }
+
+    a {
+      color: #cfe8ff;
+    }
+
+    @media (max-width: 768px) {
+      .autora-content {
+        flex-direction: column;
+      }
+
+      .autora-foto {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  </style>
 </head>
 <body>
- <nav>
-    <a href="Index.html">Brown Bear</a>
-    <!-- web browsers respond to index.html and / the same way -->
-    <a href="Autor.html">About Me</a>
-  </nav>
+  <!-- HEADER -->
+  <header>
+    <div class="logo"></div>
+    <nav>
+      <a href="Index.html#donde-escuchar">Donde escuchar</a>
+      <a href="Index.html#productoras">Productoras</a>
+      <a href="Index.html#artistas">Artistas</a>
+      <a href="Index.html#contacto">Contacto</a>
+      <a href="Autor.html">Autora</a>
+    </nav>
+  </header>
 
-<h1>About Me</h1>
-<h3>Michael Doliner</h3>
-<img src="https://content.codecademy.com/courses/web-101/htmlcss1-img_brown-bear-2.jpeg">
+  <!-- HERO -->
+  <section class="hero">
+    <h1>FRANCA CAMPAGNA</h1>
+    <p>Creadora de Sinestesia - Plataforma de música emergente en Córdoba</p>
+  </section>
 
-  <!-- A section that describes the brown bear -->
-  <p>Hey, my name is Michael, and there's little I find more exciting than bears! I've spent most of my young life traveling to the edges of Earth to take videos of these wonderful creatures.   <br /> <br />
+  <!-- AUTORA CONTENT -->
+  <section>
+    <h2>SOBRE LA AUTORA</h2>
+    
+    <div class="autora-content">
+      <div class="autora-foto"></div>
+      
+      <div class="autora-info">
+        <h3>Franca Campagna</h3>
+        
+        <p>
+          Soy una apasionada por la música emergente de Córdoba. Sinestesia nace como un proyecto dedicado a promocionar y visibilizar los espacios donde se desarrolla la música independent de nuestra ciudad.
+        </p>
 
-  	Family, Country, Bears, <br /> <br />
-    Michael D.
+        <p>
+          A través de esta plataforma, buscamos conectar artistas, productoras y amantes de la música en un espacio común donde puedan descubrir nuevas propuestas y disfrutar de experiencias musicales únicas.
+        </p>
 
-  </p>
+        <p>
+          Mi objetivo es crear una comunidad vibrante que celebre la diversidad musical y apoye el crecimiento de los talentos locales.
+        </p>
+
+        <h4>Contacto:</h4>
+        <p>
+          <strong>Email:</strong> <a href="mailto:franca.campagnaubp@gmail.com">franca.campagnaubp@gmail.com</a>
+        </p>
+
+        <div class="redes">
+          <div class="red"></div>
+          <div class="red"></div>
+          <div class="red"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <h2>CONTACTO</h2>
+    <p><strong>Email:</strong> franca.campagnaubp@gmail.com</p>
+    <p><strong>Teléfono:</strong> +54 351 XXXXXXXXX</p>
+    <p style="margin-top: 30px; font-size: 12px;">© 2026 Sinestesia. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
