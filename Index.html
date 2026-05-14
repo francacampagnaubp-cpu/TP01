@@ -1,18 +1,163 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinestesia</title>
-</head>
 
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <style>
+
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eee3d4;
+            color: #69181a;
+        }
+
+        header{
+            background-color: #69181a;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo{
+            width: 40px;
+            height: 20px;
+            background-color: #cfe8ff;
+            border-radius: 10px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: #cfe8ff;
+            margin: 15px;
+            font-size: 12px;
+        }
+
+        .hero{
+            background-color: #cfe8ff;
+            text-align: center;
+            padding: 60px 20px;
+            color: #69181a;
+        }
+
+        .hero h1{
+            font-size: 45px;
+        }
+
+        .hero p{
+            width: 60%;
+            margin: auto;
+        }
+
+        section{
+            background-color: #eee3d4;
+            margin-top: 10px;
+            padding: 30px;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 35px;
+        }
+
+        /* MAPA */
+
+        #map {
+            height: 400px;
+            width: 100%;
+            border: 2px solid #69181a;
+            border-radius: 10px;
+        }
+
+        /* PRODUCTORAS */
+
+        .productoras{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .flecha{
+            font-size: 50px;
+            color: #69181a;
+        }
+
+        .card-productora{
+            width: 150px;
+            height: 250px;
+            background-color: #cfe8ff;
+            border: 2px solid #69181a;
+            border-radius: 16px;
+        }
+
+        /* ARTISTAS */
+
+        .artista{
+            display: flex;
+            gap: 30px;
+            margin-bottom: 50px;
+            background-color: #cfe8ff;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .foto{
+            width: 180px;
+            height: 180px;
+            background-color: #69181a;
+            border-radius: 50%;
+        }
+
+        .info h3{
+            font-size: 40px;
+            margin: 0;
+            color: #69181a;
+        }
+
+        .redes{
+            display: flex;
+            gap: 10px;
+        }
+
+        .red{
+            width: 35px;
+            height: 35px;
+            background-color: #69181a;
+            border-radius: 8px;
+        }
+
+        /* FOOTER */
+
+        footer{
+            background-color: #69181a;
+            color: #cfe8ff;
+            text-align: center;
+            padding: 40px;
+        }
+
+        footer h2{
+            background-color: transparent;
+            color: #cfe8ff;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
 <body>
 
     <!-- HEADER -->
 
     <header>
 
-        <h3>LOGO</h3>
+        <div class="logo"></div>
 
         <nav>
             <a href="">Donde escuchar</a>
@@ -23,21 +168,18 @@
 
     </header>
 
+    <!-- HERO -->
 
-    <!-- HOME -->
+    <section class="hero">
 
-    <section>
+        <h1>MÚSICA EMERGENTE EN CÓRDOBA</h1>
 
-        <h1>SINESTESIA</h1>
-        <img src="img/pexels-thibault-trillet-44912-167605.jpg" width="1200" height="auto" alt="Espacios, artistas y música emergente en Córdoba.">
-
-<p>     Espacios, artistas y música emergente en Córdoba.</p>
-        
-       
-        
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae quidem quos voluptas necessitatibus.
+        </p>
 
     </section>
-
 
     <!-- DONDE ESCUCHAR -->
 
@@ -45,37 +187,29 @@
 
         <h2>DONDE ESCUCHAR</h2>
 
-        <img src="mapa.jpg" width="400">
+        <div id="map"></div>
 
     </section>
 
-
     <!-- PRODUCTORAS -->
-     <video src="video/12873805_3840_2160_50fps.mp4" controls width="720" height="auto"> 
-
 
     <section>
 
         <h2>PRODUCTORAS</h2>
 
-        <button>←</button>
+        <div class="productoras">
 
-        <div>
-            <p>Productora 1</p>
+            <div class="flecha">‹</div>
+
+            <div class="card-productora"></div>
+            <div class="card-productora"></div>
+            <div class="card-productora"></div>
+
+            <div class="flecha">›</div>
+
         </div>
-
-        <div>
-            <p>Productora 2</p>
-        </div>
-
-        <div>
-            <p>Productora 3</p>
-        </div>
-
-        <button>→</button>
 
     </section>
-
 
     <!-- ARTISTAS -->
 
@@ -83,20 +217,94 @@
 
         <h2>ARTISTAS</h2>
 
-        <img src="artista.jpg" width="150">
+        <!-- ARTISTA 1 -->
 
-        <h3>Nombre artista</h3>
+        <div class="artista">
 
-        <p>
-            Descripción del artista.
-        </p>
+            <div class="foto"></div>
 
-        <p>
-            Instagram - Spotify - YouTube
-        </p>
+            <div class="info">
+
+                <h3>Nombre</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quibusdam, molestiae.
+                </p>
+
+                <h4>Contacto:</h4>
+
+                <div class="redes">
+
+                    <div class="red"></div>
+                    <div class="red"></div>
+                    <div class="red"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ARTISTA 2 -->
+
+        <div class="artista">
+
+            <div class="foto"></div>
+
+            <div class="info">
+
+                <h3>Nombre</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quibusdam, molestiae.
+                </p>
+
+                <h4>Contacto:</h4>
+
+                <div class="redes">
+
+                    <div class="red"></div>
+                    <div class="red"></div>
+                    <div class="red"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ARTISTA 3 -->
+
+        <div class="artista">
+
+            <div class="foto"></div>
+
+            <div class="info">
+
+                <h3>Nombre</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quibusdam, molestiae.
+                </p>
+
+                <h4>Contacto:</h4>
+
+                <div class="redes">
+
+                    <div class="red"></div>
+                    <div class="red"></div>
+                    <div class="red"></div>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
-
 
     <!-- FOOTER -->
 
@@ -104,14 +312,44 @@
 
         <h2>AUTORA</h2>
 
-        <p>Franca Campagna</p>
+        <p>franca.campagnaubp@gmail.com</p>
 
-        <p>
-            franca.campagnaubp@gmail.com
-        </p>
+        <h3>FRANCA CAMPAGNA</h3>
 
-    </footer>
+        <p>Contacto:</p>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+        // Inicializar mapa
+        var map = L.map('map').setView([-31.4201, -64.1888], 13);
+
+        // Capa de mapa
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Marcadores para los lugares
+        var locations = [
+            { name: "Chilis street club", address: "Fructuoso Rivera 273, X5000BOE Córdoba", lat: -31.415, lng: -64.185 },
+            { name: "Jangadero", address: "Dr. T. Achaval Rodriguez 257, X5000 Córdoba", lat: -31.418, lng: -64.190 },
+            { name: "Club Paraguay", address: "Av. Marcelo T. de Alvear 651, X5000 Córdoba", lat: -31.422, lng: -64.192 },
+            { name: "Petalos de Sol", address: "Av. Marcelo T. de Alvear 396, X5000KGS Córdoba", lat: -31.420, lng: -64.188 },
+            { name: "Un Mundo Feliz", address: "Caseros 382, X5000AHH Córdoba", lat: -31.417, lng: -64.186 },
+            { name: "Pez Volcán", address: "Av. Marcelo T. de Alvear 835, X5000 Córdoba", lat: -31.424, lng: -64.194 },
+            { name: "Studio Theater", address: "Rosario de Sta. Fe 272, X5000 Córdoba", lat: -31.419, lng: -64.187 },
+            { name: "Plaza de la música", address: "Ramón Bautista Mestre, X5000 Córdoba", lat: -31.421, lng: -64.189 },
+            { name: "Quality Espacio", address: "Cruz Roja Argentina 200, X5000 Córdoba", lat: -31.416, lng: -64.184 },
+            { name: "Luzbelito Bar", address: "Buenos Aires 489, X5000IMI Córdoba", lat: -31.423, lng: -64.191 }
+        ];
+
+        locations.forEach(function(location) {
+            L.marker([location.lat, location.lng])
+                .addTo(map)
+                .bindPopup('<b>' + location.name + '</b><br>' + location.address);
+        });
+    </script>
 
 </body>
-
 </html>
